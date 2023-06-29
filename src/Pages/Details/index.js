@@ -1,7 +1,7 @@
 import { Container, Movie, MovieList } from "./styles";
 import { useEffect, useState } from "react";
+import { APIKey } from "../../config/key";
 import { Link, useParams } from "react-router-dom";
-import APIKey from "../../config/key.env";
 
 function Details() {
   const { id } = useParams();
