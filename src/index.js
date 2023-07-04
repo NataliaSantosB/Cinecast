@@ -4,12 +4,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./global.css";
 import Home from "./Pages/Home";
 import Details from "./Pages/Details";
+import Cast from "./Pages/Cast";
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/details/:id" element={<Details />} />
+      <Route path="/cast/:id" element={<Cast />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")
