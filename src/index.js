@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { initializeApp } from "firebase/app"; // Importe a função initializeApp
-import { getAnalytics } from "firebase/analytics"; // Importe a função getAnalytics
 import "./global.css";
 import Home from "./Pages/Home";
 import Details from "./Pages/Details";
@@ -20,8 +19,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+initializeApp(firebaseConfig);
 
 ReactDOM.render(
   <BrowserRouter>

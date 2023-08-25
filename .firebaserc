@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "cinecast-cdbf5"
+    "default": "cinecast-cdbf5",
+    "cinecast-cdbf5": "cinecast-cdbf5"
   }
 }
